@@ -46,7 +46,7 @@ import run.halo.app.service.assembler.comment.PostCommentRenderAssembler;
 
 /**
  * Content post controller.
- *
+ *  文章相关信息
  * @author johnniang
  * @author ryanwang
  * @author guqing

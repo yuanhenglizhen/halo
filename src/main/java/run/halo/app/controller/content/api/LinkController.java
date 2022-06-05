@@ -15,7 +15,7 @@ import run.halo.app.service.LinkService;
 
 /**
  * Content link controller.
- *
+ *  友情链接
  * @author johnniang
  * @author ryanwang
  * @date 2019-04-03

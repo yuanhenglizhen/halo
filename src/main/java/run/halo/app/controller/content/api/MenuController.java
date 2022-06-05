@@ -15,7 +15,7 @@ import run.halo.app.service.MenuService;
 
 /**
  * Content menu controller.
- *
+ *  菜单
  * @author johnniang
  * @author ryanwang
  * @date 2019-04-03

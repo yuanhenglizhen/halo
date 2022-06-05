@@ -18,7 +18,7 @@ import run.halo.app.service.PhotoService;
 
 /**
  * Content photo controller.
- *
+ *  图片
  * @author ryanwang
  * @date 2019-09-21
  */

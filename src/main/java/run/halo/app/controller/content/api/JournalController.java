@@ -38,7 +38,7 @@ import run.halo.app.service.assembler.comment.JournalCommentRenderAssembler;
 
 /**
  * Content journal controller.
- *
+ *  用户日志
  * @author johnniang
  * @author ryanwang
  * @date 2019-04-26

@@ -33,7 +33,7 @@ import run.halo.app.service.assembler.PostRenderAssembler;
 
 /**
  * Content category controller.
- *
+ *  分类
  * @author ryanwang
  * @date 2019-06-09
  */

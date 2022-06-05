@@ -65,7 +65,7 @@ ext {
     flexmarkVersion = "0.62.2"
     thumbnailatorVersion = '0.4.14'
     image4jVersion = "0.7zensight1"
-    flywayVersion = "7.15.0"
+    flywayVersion = "5.2.1"
     h2Version = "1.4.199"
     levelDbVersion = "0.12"
     annotationsVersion = "3.0.1u2"
@@ -75,6 +75,8 @@ ext {
     jsoupVersion = '1.14.3'
     embeddedRedisVersion = '0.6'
     diffUtilsVersion = '4.11'
+    druidVersion = '1.1.10'
+    swaggerAnVersion = '1.5.20'
 }
 
 dependencies {
@@ -125,16 +127,19 @@ dependencies {
     implementation "org.flywaydb:flyway-core:$flywayVersion"
     implementation "com.google.zxing:core:$zxingVersion"
     implementation "io.github.java-diff-utils:java-diff-utils:$diffUtilsVersion"
-
+    implementation "com.alibaba:druid:1.1.10"
     implementation "org.iq80.leveldb:leveldb:$levelDbVersion"
     runtimeOnly "com.h2database:h2:$h2Version"
     runtimeOnly "mysql:mysql-connector-java"
+    implementation "io.swagger:swagger-annotations:$swaggerAnVersion"
+
 
     compileOnly "org.projectlombok:lombok"
     annotationProcessor "org.projectlombok:lombok"
 
     testCompileOnly "org.projectlombok:lombok"
     testAnnotationProcessor "org.projectlombok:lombok"
+
 
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
@@ -145,7 +150,15 @@ dependencies {
         exclude group: 'org.slf4j', module: 'slf4j-simple'
     }
 
+    testImplementation ("io.springfox:springfox-swagger2:2.9.2") {
+        exclude group: 'io.swagger', module: 'swagger-annotations'
+        exclude group: 'io.swagger', module: 'swagger-models'
+    }
+
     developmentOnly "org.springframework.boot:spring-boot-devtools"
+
+
+
 }
 
 test {
